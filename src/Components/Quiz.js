@@ -19,7 +19,7 @@ const Quiz = () => {
 
   const handleNextQuestion = () => {
     if (selectedAnswer === currentQuestion.correctAnswer) {
-      setScore(score + 5); // Assuming each correct answer is worth 5 points
+      setScore(score + 5); // each correct answer is worth 5 points
       setResults((prevResults) => ({
         ...prevResults,
         correct: prevResults.correct + 1,
@@ -64,7 +64,7 @@ const Quiz = () => {
               <p className="text-lg">Wrong Answers: {results.incorrect}</p>
               <button
                 onClick={handleRestartQuiz}
-                className="mt-4 px-6 py-2 bg-purple-500 text-white rounded-lg"
+                className="mt-4 px-6 py-2 bg-purple-600 text-white rounded-lg"
               >
                 Restart Quiz
               </button>
